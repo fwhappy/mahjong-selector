@@ -1,0 +1,6 @@
+hash: 22bd07834128bb9d18303d975cb6d68c82d4aa37c330e85b185da877d5315004
+updated: 2017-06-01T15:52:08.364890053+08:00
+imports:
+- name: github.com/fwhappy/util
+  version: 5d869a9382977abe19bc5ad0740d15f72eda21ec
+testImports: []

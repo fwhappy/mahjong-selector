@@ -1,0 +1,47 @@
+package mselector
+
+// 麻将牌面对应的数值定义
+const (
+	MAHJONG_PLACEHOLDER = iota // 空，占位，无意义
+	MAHJONG_CRAK1              // 万(1 ~ 9)
+	MAHJONG_CRAK2
+	MAHJONG_CRAK3
+	MAHJONG_CRAK4
+	MAHJONG_CRAK5
+	MAHJONG_CRAK6
+	MAHJONG_CRAK7
+	MAHJONG_CRAK8
+	MAHJONG_CRAK9
+	MAHJONG_CRAK_PLACEHOLDER // 10, 占位，无意义
+	MAHJONG_BAM1             // 条(11 ~ 19)
+	MAHJONG_BAM2
+	MAHJONG_BAM3
+	MAHJONG_BAM4
+	MAHJONG_BAM5
+	MAHJONG_BAM6
+	MAHJONG_BAM7
+	MAHJONG_BAM8
+	MAHJONG_BAM9
+	MAHJONG_BAM_PLACE_HOLDER // 20, 占位，无意义
+	MAHJONG_DOT1             // 筒(21 ~ 29)
+	MAHJONG_DOT2
+	MAHJONG_DOT3
+	MAHJONG_DOT4
+	MAHJONG_DOT5
+	MAHJONG_DOT6
+	MAHJONG_DOT7
+	MAHJONG_DOT8
+	MAHJONG_DOT9
+	MAHJONG_DOT_PLACEHOLDER // 30, 占位，无意义
+)
+
+// 机器人等级
+const (
+	AI_BRASS    = iota // 英勇黄铜
+	AI_SLIVER          // 不屈白银
+	AI_GOLD            // 荣耀黄金
+	AI_PLATINUM        // 华贵铂金
+	AI_DIAMOND         // 璀璨钻石
+	AI_MASTER          // 非凡大师
+	AI_KING            // 最强王者
+)

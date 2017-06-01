@@ -1,0 +1,3 @@
+package: mahjong-selector
+import:
+- package: github.com/fwhappy/util
