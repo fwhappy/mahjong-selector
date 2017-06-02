@@ -62,6 +62,12 @@ func (ms *MSelector) GetSuggest(depth int) int {
 	}
 }
 
+// GetEffects 计算牌型所在的牌阶以及一类有效牌数量
+func (ms *MSelector) GetEffects(s []int) (int, int) {
+	step, effects := calcEffects(s)
+	return step, len(effects)
+}
+
 // 英勇黄铜
 // 打手牌的第一张
 func (ms *MSelector) suggestByAIBrass(s []int) int {
