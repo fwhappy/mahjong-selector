@@ -182,6 +182,7 @@ func (ms *MSelector) suggestByAIPlatinum(s []int) int {
 	}
 
 	// 如果存在相同的一类有效牌，则根据权重再取一次
+	showDebug("maxEffectTiles:%v", maxEffectTiles)
 	if len(maxEffectTiles) > 1 {
 		showDebug("存在多张有效牌相同的打法，根据剩余牌权重重新筛选一次:%v", maxEffectTotalWeights)
 
@@ -190,7 +191,7 @@ func (ms *MSelector) suggestByAIPlatinum(s []int) int {
 		showDebug("权重最大的牌:%v", maxWeightTiles)
 
 		// 找出权重最小的牌中，关联牌最少的一张
-		maxRemainCnt := 0
+		maxRemainCnt := -1
 		var maxRemainTile int
 		for _, tile := range maxWeightTiles {
 			remainCnt := ms.getRemainTilesCnt([]int{tile})

@@ -11,5 +11,5 @@ func showError(format string, s ...interface{}) {
 
 // 显示debug信息
 func showDebug(format string, s ...interface{}) {
-	// fmt.Println("[DEBUG]", fmt.Sprintf(format, s...))
+	fmt.Println("[DEBUG]", fmt.Sprintf(format, s...))
 }
